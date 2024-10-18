@@ -1,0 +1,658 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+    color: #c0c0c0;
+    font-size: 19px; /* Increased font size */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #2e2e2e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 19px; /* Increased font size */
+}
+
+ol li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 19px; /* Increased font size */
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: 19px; /* Increased font size */
+}
+
+ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 19px; /* Increased font size */
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.4rem; /* Increased font size */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #b0b0b0;
+    font-size: 19px; /* Increased font size */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #3e3e3e;
+    color: #ffffff;
+    font-size: 19px; /* Increased font size */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 19px; /* Increased font size */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+a.custom-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px; /* Increased font size */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Change background color on hover */
+a.custom-btn:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
+}
+
+/* Optional smaller version for certain cases */
+a.custom-btn-small {
+    padding: 8px 16px;
+    font-size: 16px; /* Increased font size */
+}
+
+a.btn {
+    display: inline-block;
+    text-align: center;
+    background: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 19px; /* Increased font size */
+}
+
+a.btn:hover {
+    background: #45a049;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 19px; /* Increased font size */
+}
+
+.success {
+    color: green;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 19px; /* Increased font size */
+}
+
+form {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dashboard-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3e3e3e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 19px; /* Increased font size */
+}
+
+.scripts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.script {
+    background: #3e3e3e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 19px; /* Increased font size */
+}
+
+.script h2 {
+    margin-top: 0;
+    color: #ffffff;
+    font-size: 2rem; /* Increased font size */
+}
+
+.script p {
+    margin: 10px 0;
+    font-size: 19px; /* Increased font size */
+}
+
+.script a {
+    display: inline-block;
+    text-align: center;
+    background: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 19px; /* Increased font size */
+}
+
+.save-btn {
+    display: inline-block;
+    text-align: center;
+    background: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 19px; /* Increased font size */
+}
+
+.script a:hover {
+    background: #45a049;
+}
+
+.script form {
+    display: inline-block;
+    width: calc(50% - 10px);
+    margin: 10px 0;
+}
+
+.script form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 19px; /* Increased font size */
+}
+
+.script form input[type="submit"].run {
+    background: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.script form input[type="submit"].run:hover {
+    background: #45a049;
+}
+
+.script form input[type="submit"].stop {
+    background: #f44336;
+    color: white;
+    border: none;
+}
+
+.script form input[type="submit"].stop:hover {
+    background: #e53935;
+}
+
+.config {
+    background: #3e3e3e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 19px; /* Increased font size */
+}
+
+.config label {
+    display: block;
+    margin-bottom: 5px;
+    color: #b0b0b0;
+    font-size: 19px; /* Increased font size */
+}
+
+.config input[type="text"],
+.config input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #3e3e3e;
+    color: #ffffff;
+    font-size: 19px; /* Increased font size */
+}
+
+.config input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 19px; /* Increased font size */
+}
+
+.config input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    background: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 19px; /* Increased font size */
+}
+
+.btn:hover {
+    background: #45a049;
+}
+
+.arrow {
+    margin-left: 5px; /* Adjust spacing between text and arrow */
+}
+
+/* styles.css */
+.delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px; /* Increased font size */
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+}
+
+.delete:hover {
+    background-color: darkred;
+}
+
+/* Side navigation styles */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1c1c1c; /* Slightly lighter background for better contrast */
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: transform 0.5s ease-in-out;
+}
+.sidenav a {
+    padding: 10px 10px 10px 35px;
+    text-decoration: none;
+    font-size: 24px; /* Increased font size */
+    color: #b8b8b8;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    background-color: #333; /* Add a background color on hover for emphasis */
+    padding-left: 45px; /* Smooth transition to indicate hover */
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 43px; /* Increased font size */
+    margin-left: 50px;
+}
+
+.tutorial-links a {
+    font-size: 22px; /* Increased font size */
+    padding-left: 50px; /* Indent submenu items */
+}
+
+.arrow {
+    transition: 0.3s ease;
+}
+
+.openbtn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 36px; /* Increased font size */
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.tutorial-links {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.tutorial-links.active {
+    max-height: 500px; /* Adjust based on content height */
+}
+
+.openbtn:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+/*sub css*/
+
+/* General Subscription Page Style */
+.subscription-body {
+    background-color: #181828;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 19px; /* Increased font size */
+}
+
+/* Container for Subscription Plans */
+.subscription-container {
+    text-align: center;
+    color: #fff;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 19px; /* Increased font size */
+}
+
+.subscription-plan-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    font-size: 19px; /* Increased font size */
+}
+
+@media (max-width: 800px) {
+    .subscription-plan-header {
+        flex-direction: column;
+        width: 100%; /* Ensure the container takes full width */
+    }
+    .plan-card {
+        flex-basis: 100%; /* Ensure cards take full width when stacked */
+    }
+    .subscription-subscribe-buttons {
+        flex-direction: column; /* Stack the buttons vertically */
+        width: 100%; /* Full width for the container */
+        gap: 10px; /* Smaller gap for narrow screens */
+    }
+}
+
+.plan-card {
+    flex: 1;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 3px 9px 16px rgb(0, 0, 0, 0.4), -3px -3px 10px rgba(255, 255, 255, 0.06), inset 14px 14px 26px rgb(0, 0, 0, 0.3), inset -3px -3px 15px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 19px; /* Increased font size */
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 35px 80px rgba(4, 255, 236, 0.25), 0px 0px 0px rgba(10, 197, 173, 0.33);
+}
+
+/* Plan Card Colors */
+.plan-card-basic {
+    background-color: #1A1423;
+}
+
+.plan-card-medium {
+    background-color: #372549;
+}
+
+.plan-card-vip {
+    background-color: #774C60;
+}
+
+/* Features under Plan Cards */
+.plan-features {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 19px; /* Increased font size */
+}
+
+.plan-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan-features li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    font-size: 19px; /* Increased font size */
+}
+
+.plan-features li:last-child {
+    border-bottom: none;
+}
+
+/* Button Styling */
+.subscription-btn {
+    background-color: #ffffff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 2px 26px rgb(0, 0, 0, 0.5), 0px 7px 13px rgba(255, 255, 255, 0.03);
+    font-size: 19px; /* Increased font size */
+}
+
+.subscription-btn:hover {
+    background-color: #f0f0f0;
+    opacity: 0.9;
+}
+
+.subscription-btn-popular {
+    background-color: #ffc107;
+    color: #000;
+    font-size: 19px; /* Increased font size */
+}
+
+.subscription-subscribe-btn {
+    margin-top: 10px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 19px; /* Increased font size */
+}
+
+.subscription-subscribe-btn:hover {
+    background-color: #218838;
+}
+
+/* Subscription Buttons Styling */
+.subscription-subscribe-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 19px; /* Increased font size */
+}
+
+/*landing cdd */
+.landing-container {
+    padding: 50px 20px;
+    font-size: 19px; /* Increased font size */
+}
+
+.text-center {
+    text-align: center;
+    font-size: 19px; /* Increased font size */
+}
+
+.sync-features-section {
+    margin-top: 50px;
+    font-size: 19px; /* Increased font size */
+}
+
+.sync-feature {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 19px; /* Increased font size */
+}
+
+.sync-feature-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sync-call-to-action {
+    margin-top: 50px;
+    font-size: 19px; /* Increased font size */
+}
+
+.sync-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 19px; /* Increased font size */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.sync-btn-primary {
+    background-color: #007bff;
+}
+
+.sync-btn-secondary {
+    background-color: #6c757d;
+}
+
+.sync-btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.sync-btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/*dashboard*/
+.dashboard-container {
+    padding: 50px 20px;
+    color: #444; /* Darker text color */
+    text-align: center;
+    font-size: 19px; /* Increased font size */
+}
+
+.dashboard-info {
+    background-color: #1e1e1e; /* Light grey background color */
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 19px; /* Increased font size */
+}
+
+.dashboard-info p {
+    font-size: 22px; /* Increased font size */
+    margin: 10px 0;
+    color: #adadad; /* Slightly darker text color */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    color: #818181;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px; /* Increased font size */
+}
+footer a {
+    color: #818181;
+    text-decoration: none;
+    font-size: 19px; /* Increased font size */
+}
+footer a:hover {
+    color: #f1f1f1;
+}
